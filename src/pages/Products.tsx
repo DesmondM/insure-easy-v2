@@ -33,7 +33,7 @@ const Products = () => {
             <div className="main-menu">
               <div className="container">
                 <div className="logo-box">
-                  <a href="index.html" aria-label="logo image">
+                  <a onClick={() => navigate("/")} aria-label="logo image">
                     <img src="assets/images/logo-dark.png" width="155" alt="" />
                   </a>
                   <span className="fa fa-bars mobile-nav__toggler"></span>
@@ -53,7 +53,9 @@ const Products = () => {
                         <a href="#">Health Care</a>
                       </li>
                       <li>
-                        <a href="#">Funeral Cover</a>
+                        <a onClick={() => navigate("/funeralinsurance")}>
+                          Funeral Cover
+                        </a>
                       </li>
                       <li>
                         <a href="#">Accisure</a>
@@ -115,7 +117,7 @@ const Products = () => {
             <div className="col-lg-4">
               <div className="service-one__card">
                 <div className="service-one__image">
-                  <a href="funeral insurance.html">
+                  <a onClick={() => navigate("/funeralinsurance")}>
                     <div className="post-thumbnail">
                       <img
                         src="assets/images/services/services-1-1.png"
@@ -125,13 +127,15 @@ const Products = () => {
                   </a>
                 </div>
                 <div className="service-one__content">
-                  <a href="funeral insurance.html">
+                  <a onClick={() => navigate("/funeralinsurance")}>
                     <div className="service-icon">
                       <i className="flaticon-car-loan"></i>
                     </div>
                   </a>
                   <h3>
-                    <a href="funeral insurance.html">Funeral Cover</a>
+                    <a onClick={() => navigate("/funeralinsurance")}>
+                      Funeral Cover
+                    </a>
                   </h3>
                   <p>
                     Insure Easy guaranteed acceptance funeral cover provides a
@@ -141,7 +145,7 @@ const Products = () => {
                     the future.
                   </p>
                   <a
-                    href="funeral insurance.html"
+                    onClick={() => navigate("/funeralinsurance")}
                     className="pylon-icon-right-arrow service-one__link"
                   ></a>
                 </div>
@@ -150,7 +154,7 @@ const Products = () => {
             <div className="col-lg-4">
               <div className="service-one__card">
                 <div className="service-one__image">
-                  <a href="healthcare.html">
+                  <a onClick={() => navigate("/healthcare")}>
                     <div className="post-thumbnail">
                       <img
                         src="assets/images/services/services-1-2.png"
@@ -160,13 +164,15 @@ const Products = () => {
                   </a>
                 </div>
                 <div className="service-one__content">
-                  <a href="healthcare.html">
+                  <a onClick={() => navigate("/healthcare")}>
                     <div className="service-icon">
                       <i className="flaticon-online-money"></i>
                     </div>
                   </a>
                   <h3>
-                    <a href="healthcare.html">Healthcare Insurance </a>
+                    <a onClick={() => navigate("/healthcare")}>
+                      Healthcare Insurance{" "}
+                    </a>
                   </h3>
                   <p>
                     We believe in providing you with health insurance that
@@ -175,7 +181,7 @@ const Products = () => {
                     insurance cover to give you peace of mind.
                   </p>
                   <a
-                    href="healthcare.html"
+                    onClick={() => navigate("/healthcare")}
                     className="pylon-icon-right-arrow service-one__link"
                   ></a>
                 </div>
@@ -184,7 +190,7 @@ const Products = () => {
             <div className="col-lg-4">
               <div className="service-one__card">
                 <div className="service-one__image">
-                  <a href="accisure.html">
+                  <a onClick={() => navigate("/accisure")}>
                     <div className="post-thumbnail">
                       <img
                         src="assets/images/services/services-1-3.png"
@@ -194,13 +200,15 @@ const Products = () => {
                   </a>
                 </div>
                 <div className="service-one__content">
-                  <a href="accisure.html">
+                  <a onClick={() => navigate("/accisure")}>
                     <div className="service-icon">
                       <i className="flaticon-online-money"></i>
                     </div>
                   </a>
                   <h3>
-                    <a href="accisure.html">Accisure Insurance</a>
+                    <a onClick={() => navigate("/accisure")}>
+                      Accisure Insurance
+                    </a>
                   </h3>
                   <p>
                     Our customised product affords employers peace of mind that
@@ -209,7 +217,7 @@ const Products = () => {
                     work or while commuting. There is no joining fee..
                   </p>
                   <a
-                    href="accisure.html"
+                    onClick={() => navigate("/accisure")}
                     className="pylon-icon-right-arrow service-one__link"
                   ></a>
                 </div>
@@ -226,7 +234,7 @@ const Products = () => {
               <div className="row justify-content-between">
                 <div className="col-lg-3 col-sm-6">
                   <div className="footer-widget footer-widget__about">
-                    <a href="index.html">
+                    <a onClick={() => navigate("/")}>
                       <img
                         src="assets/images/logo-light.png"
                         width="155"
@@ -259,12 +267,12 @@ const Products = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="about.html">
+                        <a onClick={() => navigate("/about")}>
                           <i className="fa fa-arrow-right"></i>About
                         </a>
                       </li>
                       <li>
-                        <a href="services.html">
+                        <a onClick={() => navigate("/products")}>
                           <i className="fa fa-arrow-right"></i>Products
                         </a>
                       </li>
@@ -281,17 +289,17 @@ const Products = () => {
                     <h3 className="footer-widget__title">Downloads</h3>
                     <ul className="list-unstyled footer-widget__link-list">
                       <li>
-                        <a href="funeral insurance.html">
+                        <a onClick={() => navigate("/funeralinsurance")}>
                           <i className="fa fa-arrow-right"></i>Funeral Cover
                         </a>
                       </li>
                       <li>
-                        <a href="healthcare.html">
+                        <a onClick={() => navigate("/healthcare")}>
                           <i className="fa fa-arrow-right"></i>Healthcare
                         </a>
                       </li>
                       <li>
-                        <a href="accisure.html">
+                        <a onClick={() => navigate("/accisure")}>
                           <i className="fa fa-arrow-right"></i>Accisure
                         </a>
                       </li>
@@ -341,7 +349,7 @@ const Products = () => {
           <div className="mobile-nav__content">
             <span className="mobile-nav__close mobile-nav__toggler"></span>
             <div className="logo-box">
-              <a href="index.html" aria-label="logo image">
+              <a onClick={() => navigate("/")} aria-label="logo image">
                 <img src="assets/images/logo-light.png" width="155" alt="" />
               </a>
             </div>

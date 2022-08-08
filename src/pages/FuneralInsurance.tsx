@@ -1,17 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import img4 from "../images/page-header-bg-1-1.jpg";
 import img1 from "../images/logo-light.png";
 import img2 from "../images/logo-dark.png";
+import img4 from "../images/page-header-bg-1-1.jpg";
+import img5 from "../images/service-sidebar-1-1.jpeg";
 
-const Accisure = () => {
+export const FuneralInsurance = () => {
   const navigate = useNavigate();
-
   return (
     <>
       {/* <div className="preloader">
-        <img className="preloader__image" src="assets/images/loader.png" alt=""/>
-    </div> */}
+        <img
+          className="preloader__image"
+          src="assets/images/loader.png"
+          alt=""
+        />
+      </div> */}
       <div className="page-wrapper">
         <header className="main-header">
           <div className="topbar">
@@ -63,7 +67,7 @@ const Accisure = () => {
                       </a>
                     </li>
                     <li>
-                      <a onClick={() => navigate("/accisure")}>Accisure</a>
+                      <a href="accisure.html">Accisure</a>
                     </li>
                   </ul>
                 </li>
@@ -108,10 +112,10 @@ const Accisure = () => {
               </li>
               <li>/</li>
               <li>
-                <span>ACCISURE</span>
+                <span>Funeral Cover</span>
               </li>
             </ul>
-            <h2>ACCISURE</h2>
+            <h2>Funeral Cover</h2>
           </div>
         </section>
 
@@ -144,14 +148,14 @@ const Accisure = () => {
                   </div>
 
                   <div className="document-widget-post">
-                    <h3 className="blog-sidebar__box-title">Read</h3>
+                    <h3 className="blog-sidebar__box-title">Download</h3>
                     <div className="pylon-links">
                       <a
-                        href="https://accisure.co.za/terms-and-condition/"
+                        href="assets/images/info-kits/Health iAccess Funeral Brochure A4.pdf"
                         target="_blank"
                       >
-                        <i className="far fa-file-alt"></i>Terms and
-                        Conditions&nbsp;
+                        <i className="far fa-file-alt"></i>Product
+                        Brochure.pdf&nbsp; (1.5 MB)
                       </a>
                     </div>
                   </div>
@@ -160,8 +164,7 @@ const Accisure = () => {
                     <div
                       className="service-sidebar__call-bg"
                       style={{
-                        backgroundImage:
-                          "url(assets/images/services/service-sidebar-1-1.jpg);",
+                        backgroundImage: `url(${img4})`,
                       }}
                     ></div>
                     <i className="pylon-icon-tech-support"></i>
@@ -182,36 +185,29 @@ const Accisure = () => {
                 <div className="service-details__content">
                   <div className="service-details__image">
                     <img
-                      src="assets/images/services/service-d-1-c.jpg"
+                      src="assets/images/services/service-d-1-b.jpg"
                       className="img-fluid"
                       alt=""
                     />
                   </div>
-                  <h3>ACCISURE FOR BUSINESS</h3>
+                  <h3>Funeral Cover</h3>
                   <p>
-                    As a membership programme for employers, Accisure enables
-                    businesses to provide private medical care to their workers
-                    should they get injured at work or while commuting. We give
-                    you peace of mind that your workers, especially those
-                    without medical aid, will get the assistance and medical
-                    care that they deserve.
-                  </p>
-                  <p>
-                    In addition, we assist you to ensure that your business is
-                    legally compliant and that all administration, including
-                    obtaining all necessary documents, is taken care of.
+                    When a loved one passes away, we all want to show our love
+                    and respect by being able to afford a dignified funeral.
+                    This may be costly, thus it is critical to budget for a
+                    funeral. The HealthiAccess Funeral Plans provides financial
+                    assistance to pay your funeral expenditures, giving you and
+                    your family peace of mind during your time of need.
                   </p>
 
                   <div className="service-details__loan">
                     <div className="block-title">
-                      <h4>The ACCISURE Benefits:</h4>
+                      <h4>Terms and Conditions</h4>
                     </div>
                     <p>
-                      With Accisure Road you ensure that your workers are not
-                      left to fend for themselves when injured in a road
-                      accident. This includes incidents that occur during
-                      working hours as a driver or passenger, or after working
-                      hours while commuting.
+                      It is important to read and understand the terms and
+                      conditions and to acknowledge that participation and
+                      acceptance by customers shall be on voluntary basis.
                     </p>
                   </div>
 
@@ -232,7 +228,7 @@ const Accisure = () => {
                             aria-controls="collapseTwo"
                           >
                             <i className="far fa-minus"></i>
-                            ACCISURE ROAD
+                            Family Funeral
                           </span>
                         </h2>
                         <div
@@ -243,8 +239,9 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            Collect all required accident information needed to
-                            be admitted to a private network hospital.
+                            Maximum age of principal member of 90 and minimum
+                            age of 18. Family Funeral Cover expires on principal
+                            member’s death.
                           </p>
                         </div>
                       </li>
@@ -259,7 +256,7 @@ const Accisure = () => {
                             aria-controls="collapseOne"
                           >
                             <i className="far fa-plus"></i>
-                            ACCISURE WORKPLACE
+                            Extended Family
                           </span>
                         </h2>
                         <div
@@ -269,13 +266,14 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            With Accisure Workplace we consult to your business,
-                            ensuring that you are legally compliant with the
-                            Compensation for Occupational Injuries and Diseases
-                            (COID) Act and your workers are registered. Should
-                            an accident occur, your workers get the best
-                            possible private healthcare and business
-                            interruption is minimised.
+                            6 Month Waiting Period for parents and members of
+                            the extended family. | Covers to a maximum of 5,7, 9
+                            or 13 family members in addition to the main member.
+                            | All family members covered must be nominated at
+                            outset. | Parents and members of the extended family
+                            may only be added at the date of joining the scheme.
+                            | Maximum number of parents plus parents-in-law is
+                            4. | Only 1 customary wife allowed.
                           </p>
                         </div>
                       </li>
@@ -290,7 +288,7 @@ const Accisure = () => {
                             aria-controls="collapseThree"
                           >
                             <i className="far fa-plus"></i>
-                            WORKPLACE INJURY MANAGEMENT
+                            Claims, Underwriting, Administration.
                           </span>
                         </h2>
                         <div
@@ -300,99 +298,12 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            In the event of a workplace or vehicle accident, we
-                            provide full support for your worker’s medical care,
-                            where needed, and ensure that their individual case
-                            is managed by a service provider, up to full
-                            recovery.
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <h3>ACCISURE FOR ME</h3>
-                  <p>
-                    With an Accisure membership, you get the private medical
-                    care you deserve if you’re a passenger injured in a motor
-                    vehicle accident. After an accident Accisure will manage the
-                    administration to ensure you get admitted to a private
-                    hospital, where healthcare providers will give you all the
-                    treatment needed for your injuries. This includes all
-                    hospitalisation, surgery and rehabilitation if needed.
-                  </p>
-                  <p>
-                    All medical costs will be paid by the Road Accident Fund
-                    (RAF) directly to the service providers. This means you can
-                    focus on your recovery, without worrying about medical costs
-                    or unnecessary time away from work or your family.
-                  </p>
-
-                  <div className="service-details__loan">
-                    <div className="block-title">
-                      <h4>Benefits:</h4>
-                    </div>
-                    <p>
-                      There is no joining fee and access to private care is
-                      immediate. This includes incidents that occur during
-                      working hours as a driver or passenger, or after working
-                      hours while commuting.
-                    </p>
-                  </div>
-
-                  <div className="faq-one faq-one__faq-page py-0 ">
-                    <ul
-                      id="accordion"
-                      className="mb-0 wow fadeInUp list-unstyled"
-                      data-wow-duration="1500ms"
-                    >
-                      <li className="active">
-                        <h2 className="para-title active">
-                          <span
-                            className="collapsed"
-                            role="button"
-                            data-toggle="collapse"
-                            data-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            <i className="far fa-minus"></i>
-                            Access
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseTwo"
-                          className="collapse show"
-                          role="button"
-                          aria-labelledby="collapseTwo"
-                          data-parent="#accordion"
-                        >
-                          <p>Access to our 24/7 contact centre.</p>
-                        </div>
-                      </li>
-                      <li>
-                        <h2 className="para-title">
-                          <span
-                            className="collapsed"
-                            role="button"
-                            data-toggle="collapse"
-                            data-target="#collapseOne"
-                            aria-expanded="false"
-                            aria-controls="collapseOne"
-                          >
-                            <i className="far fa-plus"></i>
-                            Case Administrator
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseOne"
-                          className="collapse"
-                          aria-labelledby="collapseOne"
-                          data-parent="#accordion"
-                        >
-                          <p>
-                            A trained case administrator will assess your
-                            medical needs and put you in contact with a private
-                            network hospital.
+                            Individual and Family rates are quoted as premium
+                            per month by main member age. | *Married family rate
+                            includes main member + 1 spouse + up to 6 children |
+                            **Single parent family rate includes the main member
+                            + up to 6 children | Family Funeral (covers up to 6
+                            children).
                           </p>
                         </div>
                       </li>
@@ -407,7 +318,7 @@ const Accisure = () => {
                             aria-controls="collapseThree"
                           >
                             <i className="far fa-plus"></i>
-                            Quality Service
+                            Waiting Period.
                           </span>
                         </h2>
                         <div
@@ -417,115 +328,8 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            All required information will be collected on your
-                            behalf and supplied to the hospital where you will
-                            be admitted.
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <h2 className="para-title">
-                          <span
-                            className="collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            role="button"
-                            aria-controls="collapseThree"
-                          >
-                            <i className="far fa-plus"></i>
-                            Private Treatment
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="collapse"
-                          aria-labelledby="collapseThree"
-                          data-parent="#accordion"
-                        >
-                          <p>
-                            You will receive all private treatment for the
-                            injuries sustained, up to full recovery as allowed
-                            by the RAF Act.
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <h2 className="para-title">
-                          <span
-                            className="collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            role="button"
-                            aria-controls="collapseThree"
-                          >
-                            <i className="far fa-plus"></i>
-                            Medical Costs Recovered
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="collapse"
-                          aria-labelledby="collapseThree"
-                          data-parent="#accordion"
-                        >
-                          <p>
-                            All medical costs will be recovered from the RAF by
-                            the service providers.
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <h2 className="para-title">
-                          <span
-                            className="collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            role="button"
-                            aria-controls="collapseThree"
-                          >
-                            <i className="far fa-plus"></i>
-                            Peace of Mind
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="collapse"
-                          aria-labelledby="collapseThree"
-                          data-parent="#accordion"
-                        >
-                          <p>
-                            Peace of mind that you do not have to worry about
-                            medical bills but can focus on your recovery and
-                            getting back to work and your family.
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <h2 className="para-title">
-                          <span
-                            className="collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            role="button"
-                            aria-controls="collapseThree"
-                          >
-                            <i className="far fa-plus"></i>
-                            No Joining Fees
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="collapse"
-                          aria-labelledby="collapseThree"
-                          data-parent="#accordion"
-                        >
-                          <p>
-                            Immediate access to private medical care and no
-                            joining fees.
+                            Standard waiting period 6 months | Suicide Exclusion
+                            24 months
                           </p>
                         </div>
                       </li>
@@ -543,7 +347,11 @@ const Accisure = () => {
               <div className="col-lg-3 col-sm-6">
                 <div className="footer-widget footer-widget__about">
                   <a onClick={() => navigate("/")}>
-                    <img src={img1} width="155" alt="" />
+                    <img
+                      src="assets/images/logo-light.png"
+                      width="155"
+                      alt=""
+                    />
                   </a>
                   <p>
                     Welcome to Insure Easy we are committed to excellence in
@@ -603,7 +411,7 @@ const Accisure = () => {
                       </a>
                     </li>
                     <li>
-                      <a onClick={() => navigate("/accisure")}>
+                      <a href="accisure.html">
                         <i className="fa fa-arrow-right"></i>Accisure
                       </a>
                     </li>
@@ -658,7 +466,7 @@ const Accisure = () => {
           <span className="mobile-nav__close mobile-nav__toggler"></span>
           <div className="logo-box">
             <a onClick={() => navigate("/")} aria-label="logo image">
-              <img src={img1} width="155" alt="" />
+              <img src={img2} width="155" alt="" />
             </a>
           </div>
 
@@ -688,23 +496,6 @@ const Accisure = () => {
       <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
         <i className="fa fa-angle-up"></i>
       </a>
-
-      <script src="assets/js/jquery-3.5.1.min.js"></script>
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/swiper.min.js"></script>
-      <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-      <script src="assets/js/jquery.magnific-popup.min.js"></script>
-      <script src="assets/js/jquery.validate.min.js"></script>
-      <script src="assets/js/bootstrap-select.min.js"></script>
-      <script src="assets/js/wow.js"></script>
-      <script src="assets/js/odometer.min.js"></script>
-      <script src="assets/js/jquery.appear.min.js"></script>
-      <script src="assets/js/wNumb.min.js"></script>
-      <script src="assets/js/nouislider.min.js"></script>
-
-      <script src="assets/js/theme.js"></script>
     </>
   );
 };
-
-export default Accisure;

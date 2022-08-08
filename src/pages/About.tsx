@@ -60,13 +60,15 @@ const About = () => {
                   <a onClick={() => navigate("/products")}>Products</a>
                   <ul>
                     <li>
-                      <a href="healthcare.html">Health Care</a>
+                      <a onClick={() => navigate("/healthcare")}>Health Care</a>
                     </li>
                     <li>
-                      <a href="funeral insurance.html">Funeral Cover</a>
+                      <a onClick={() => navigate("/funeralinsurance")}>
+                        Funeral Cover
+                      </a>
                     </li>
                     <li>
-                      <a href="accisure.html">Accisure</a>
+                      <a onClick={() => navigate("/accisure")}>Accisure</a>
                     </li>
                   </ul>
                 </li>
@@ -508,17 +510,17 @@ const About = () => {
                   <h3 className="footer-widget__title">Downloads</h3>
                   <ul className="list-unstyled footer-widget__link-list">
                     <li>
-                      <a href="funeral insurance.html">
+                      <a onClick={() => navigate("/funeralinsurance")}>
                         <i className="fa fa-arrow-right"></i>Funeral Cover
                       </a>
                     </li>
                     <li>
-                      <a href="healthcare.html">
+                      <a onClick={() => navigate("/healthcare")}>
                         <i className="fa fa-arrow-right"></i>Healthcare
                       </a>
                     </li>
                     <li>
-                      <a href="accisure.html">
+                      <a onClick={() => navigate("/accisure")}>
                         <i className="fa fa-arrow-right"></i>Accisure
                       </a>
                     </li>
@@ -572,7 +574,7 @@ const About = () => {
         <div className="mobile-nav__content">
           <span className="mobile-nav__close mobile-nav__toggler"></span>
           <div className="logo-box">
-            <a href="index.html" aria-label="logo image">
+            <a onClick={() => navigate("/")} aria-label="logo image">
               <img src="assets/images/logo-light.png" width="155" alt="" />
             </a>
           </div>

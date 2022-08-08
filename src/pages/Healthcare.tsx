@@ -1,17 +1,22 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import img4 from "../images/page-header-bg-1-1.jpg";
 import img1 from "../images/logo-light.png";
 import img2 from "../images/logo-dark.png";
+import img3 from "../images/service-d-1-2.jpg";
+import img4 from "../images/page-header-bg-1-1.jpg";
+import img5 from "../images/service-sidebar-1-1.jpeg";
 
-const Accisure = () => {
+const Healthcare = () => {
   const navigate = useNavigate();
-
   return (
     <>
       {/* <div className="preloader">
-        <img className="preloader__image" src="assets/images/loader.png" alt=""/>
-    </div> */}
+        <img
+          className="preloader__image"
+          src="assets/images/loader.png"
+          alt=""
+        />
+      </div> */}
       <div className="page-wrapper">
         <header className="main-header">
           <div className="topbar">
@@ -55,7 +60,7 @@ const Accisure = () => {
                   <a onClick={() => navigate("/products")}>Products</a>
                   <ul>
                     <li>
-                      <a onClick={() => navigate("/healthcare")}>Health Care</a>
+                      <a href="#">Health Care</a>
                     </li>
                     <li>
                       <a onClick={() => navigate("/funeralinsurance")}>
@@ -108,10 +113,10 @@ const Accisure = () => {
               </li>
               <li>/</li>
               <li>
-                <span>ACCISURE</span>
+                <span>Healthcare Insurance</span>
               </li>
             </ul>
-            <h2>ACCISURE</h2>
+            <h2>Healthcare Insurance</h2>
           </div>
         </section>
 
@@ -130,7 +135,7 @@ const Accisure = () => {
                       </li>
 
                       <li className="pyloan-service-list-arrow">
-                        <a href="#">
+                        <a onClick={() => navigate("/funeralinsurance")}>
                           Funeral Cover<i className="fas fa-chevron-right"></i>
                         </a>
                       </li>
@@ -144,14 +149,20 @@ const Accisure = () => {
                   </div>
 
                   <div className="document-widget-post">
-                    <h3 className="blog-sidebar__box-title">Read</h3>
+                    <h3 className="blog-sidebar__box-title">Download</h3>
                     <div className="pylon-links">
-                      <a
-                        href="https://accisure.co.za/terms-and-condition/"
-                        target="_blank"
-                      >
-                        <i className="far fa-file-alt"></i>Terms and
-                        Conditions&nbsp;
+                      <a href="#" target="_blank">
+                        <i className="far fa-file-alt"></i>Value Plus Hospital
+                        Plan.pdf&nbsp; (1 MB)
+                      </a>
+                    </div>
+                  </div>
+                  <div className="document-widget-post">
+                    <h3 className="blog-sidebar__box-title">Download</h3>
+                    <div className="pylon-links">
+                      <a href="#" target="_blank">
+                        <i className="far fa-file-alt"></i>Hospital Plan
+                        Senior.pdf&nbsp; (967kb)
                       </a>
                     </div>
                   </div>
@@ -160,8 +171,7 @@ const Accisure = () => {
                     <div
                       className="service-sidebar__call-bg"
                       style={{
-                        backgroundImage:
-                          "url(assets/images/services/service-sidebar-1-1.jpg);",
+                        backgroundImage: `url(${img5})`,
                       }}
                     ></div>
                     <i className="pylon-icon-tech-support"></i>
@@ -181,38 +191,30 @@ const Accisure = () => {
               <div className="col-lg-8">
                 <div className="service-details__content">
                   <div className="service-details__image">
-                    <img
-                      src="assets/images/services/service-d-1-c.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
+                    <img src={img3} className="img-fluid" alt="" />
                   </div>
-                  <h3>ACCISURE FOR BUSINESS</h3>
+                  <h3>
+                    Value Plus Hospital Plan | (Underwritten by Day1 Health)
+                  </h3>
                   <p>
-                    As a membership programme for employers, Accisure enables
-                    businesses to provide private medical care to their workers
-                    should they get injured at work or while commuting. We give
-                    you peace of mind that your workers, especially those
-                    without medical aid, will get the assistance and medical
-                    care that they deserve.
-                  </p>
-                  <p>
-                    In addition, we assist you to ensure that your business is
-                    legally compliant and that all administration, including
-                    obtaining all necessary documents, is taken care of.
+                    Life is truly priceless and protecting one’s health is
+                    essential. We’re here to help you to lead a healthier,
+                    longer, better life – whatever that means to you! Our cover
+                    options will give you the confidence you need, so you can
+                    spend time focusing on the things that matter most. Private
+                    health cover can be confusing and expensive. Looking for
+                    cover that's better value? When you’re looking for health
+                    insurance, it’s a good idea to take a look at all the
+                    angles. You want health cover that complements your
+                    lifestyle and helps you get the best care possible
+                    compatible with your financial needs. Get Value PluS
+                    Hospital Plan.
                   </p>
 
                   <div className="service-details__loan">
                     <div className="block-title">
-                      <h4>The ACCISURE Benefits:</h4>
+                      <h4>BENEFITS</h4>
                     </div>
-                    <p>
-                      With Accisure Road you ensure that your workers are not
-                      left to fend for themselves when injured in a road
-                      accident. This includes incidents that occur during
-                      working hours as a driver or passenger, or after working
-                      hours while commuting.
-                    </p>
                   </div>
 
                   <div className="faq-one faq-one__faq-page py-0 ">
@@ -232,7 +234,7 @@ const Accisure = () => {
                             aria-controls="collapseTwo"
                           >
                             <i className="far fa-minus"></i>
-                            ACCISURE ROAD
+                            In-Hospital Illness Benefit
                           </span>
                         </h2>
                         <div
@@ -243,8 +245,12 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            Collect all required accident information needed to
-                            be admitted to a private network hospital.
+                            Covers up to R10,000 after the first 24 Hours in
+                            hospital, up to R10,000 for the second day in
+                            hospital, up to R10,000 for the third day in
+                            hospital. Thereafter R1,500 per day up to a maximum
+                            of 21 days. A 12 month pre-existing conditions
+                            exclusion applies. (Excludes Maternity Benefits).
                           </p>
                         </div>
                       </li>
@@ -259,7 +265,7 @@ const Accisure = () => {
                             aria-controls="collapseOne"
                           >
                             <i className="far fa-plus"></i>
-                            ACCISURE WORKPLACE
+                            Accident/Trauma Benefit
                           </span>
                         </h2>
                         <div
@@ -269,13 +275,8 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            With Accisure Workplace we consult to your business,
-                            ensuring that you are legally compliant with the
-                            Compensation for Occupational Injuries and Diseases
-                            (COID) Act and your workers are registered. Should
-                            an accident occur, your workers get the best
-                            possible private healthcare and business
-                            interruption is minimised.
+                            Up to R150,000 per event. A 1 month waiting period
+                            applies. (Exclusion: Sports Injuries).
                           </p>
                         </div>
                       </li>
@@ -290,7 +291,31 @@ const Accisure = () => {
                             aria-controls="collapseThree"
                           >
                             <i className="far fa-plus"></i>
-                            WORKPLACE INJURY MANAGEMENT
+                            Death Benefit
+                          </span>
+                        </h2>
+                        <div
+                          id="collapseThree"
+                          className="collapse"
+                          aria-labelledby="collapseThree"
+                          data-parent="#accordion"
+                        >
+                          <p>R10,000 for the Principal Member.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <h2 className="para-title">
+                          <span
+                            className="collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapseThree"
+                            aria-expanded="false"
+                            role="button"
+                            aria-controls="collapseThree"
+                          >
+                            <i className="far fa-plus"></i>
+                            24 Hour Emergency Services Ambulance &
+                            Pre-Authorisation
                           </span>
                         </h2>
                         <div
@@ -300,43 +325,39 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            In the event of a workplace or vehicle accident, we
-                            provide full support for your worker’s medical care,
-                            where needed, and ensure that their individual case
-                            is managed by a service provider, up to full
-                            recovery.
+                            24 Hour Emergency Services, Medical Assistance and
+                            Pre-Authorisation provided by Africa Assist.
+                            Guaranteed private hospital admission with
+                            preference to all Life Healthcare and Mediclinic
+                            hospitals.
                           </p>
                         </div>
                       </li>
                     </ul>
                   </div>
-                  <h3>ACCISURE FOR ME</h3>
+
+                  <h3>
+                    Value Plus Plan Hospital - Senior | (Underwritten by Day1
+                    Health)
+                  </h3>
                   <p>
-                    With an Accisure membership, you get the private medical
-                    care you deserve if you’re a passenger injured in a motor
-                    vehicle accident. After an accident Accisure will manage the
-                    administration to ensure you get admitted to a private
-                    hospital, where healthcare providers will give you all the
-                    treatment needed for your injuries. This includes all
-                    hospitalisation, surgery and rehabilitation if needed.
-                  </p>
-                  <p>
-                    All medical costs will be paid by the Road Accident Fund
-                    (RAF) directly to the service providers. This means you can
-                    focus on your recovery, without worrying about medical costs
-                    or unnecessary time away from work or your family.
+                    We’re here to help you to lead a healthier, longer, better
+                    life – whatever that means to you! Our cover options will
+                    give you the confidence you need, so you can spend time
+                    focusing on the things that matter most. Private health
+                    cover can be confusing and expensive. Looking for cover
+                    that's better value? When you’re looking for health
+                    insurance, it’s a good idea to take a look at all the
+                    angles. You want health cover that complements your
+                    lifestyle and helps you get the best care possible
+                    compatible with your financial needs. Get Value PluS
+                    Hospital Plan.
                   </p>
 
                   <div className="service-details__loan">
                     <div className="block-title">
-                      <h4>Benefits:</h4>
+                      <h4>BENEFITS</h4>
                     </div>
-                    <p>
-                      There is no joining fee and access to private care is
-                      immediate. This includes incidents that occur during
-                      working hours as a driver or passenger, or after working
-                      hours while commuting.
-                    </p>
                   </div>
 
                   <div className="faq-one faq-one__faq-page py-0 ">
@@ -356,7 +377,7 @@ const Accisure = () => {
                             aria-controls="collapseTwo"
                           >
                             <i className="far fa-minus"></i>
-                            Access
+                            In-Hospital Illness Benefit
                           </span>
                         </h2>
                         <div
@@ -366,7 +387,15 @@ const Accisure = () => {
                           aria-labelledby="collapseTwo"
                           data-parent="#accordion"
                         >
-                          <p>Access to our 24/7 contact centre.</p>
+                          <p>
+                            Covers up to R10,000 after the first 24 Hours in
+                            hospital, up to R10,000 for the second day in
+                            hospital, up to R10,000 for the third day in
+                            hospital. Thereafter R1,500 per day up to a maximum
+                            of 21 days. A 3 month waiting period applies and a
+                            12 month pre-existing conditions exclusion applies.
+                            (Excludes Maternity Benefits).
+                          </p>
                         </div>
                       </li>
                       <li>
@@ -380,7 +409,7 @@ const Accisure = () => {
                             aria-controls="collapseOne"
                           >
                             <i className="far fa-plus"></i>
-                            Case Administrator
+                            Accident/Trauma Benefit
                           </span>
                         </h2>
                         <div
@@ -390,9 +419,9 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            A trained case administrator will assess your
-                            medical needs and put you in contact with a private
-                            network hospital.
+                            Up to R 75,000 per event. Limited to two events per
+                            annum A 1 month waiting peiod applies. (Excludes
+                            Sport Injuries).
                           </p>
                         </div>
                       </li>
@@ -407,7 +436,7 @@ const Accisure = () => {
                             aria-controls="collapseThree"
                           >
                             <i className="far fa-plus"></i>
-                            Quality Service
+                            Death Benefit
                           </span>
                         </h2>
                         <div
@@ -417,9 +446,8 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            All required information will be collected on your
-                            behalf and supplied to the hospital where you will
-                            be admitted.
+                            R 5,000 for the policyholder only. A 3 month waiting
+                            period applies
                           </p>
                         </div>
                       </li>
@@ -434,7 +462,8 @@ const Accisure = () => {
                             aria-controls="collapseThree"
                           >
                             <i className="far fa-plus"></i>
-                            Private Treatment
+                            24 Hour Emergency Services Ambulance &
+                            Pre-Authorisation
                           </span>
                         </h2>
                         <div
@@ -444,88 +473,11 @@ const Accisure = () => {
                           data-parent="#accordion"
                         >
                           <p>
-                            You will receive all private treatment for the
-                            injuries sustained, up to full recovery as allowed
-                            by the RAF Act.
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <h2 className="para-title">
-                          <span
-                            className="collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            role="button"
-                            aria-controls="collapseThree"
-                          >
-                            <i className="far fa-plus"></i>
-                            Medical Costs Recovered
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="collapse"
-                          aria-labelledby="collapseThree"
-                          data-parent="#accordion"
-                        >
-                          <p>
-                            All medical costs will be recovered from the RAF by
-                            the service providers.
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <h2 className="para-title">
-                          <span
-                            className="collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            role="button"
-                            aria-controls="collapseThree"
-                          >
-                            <i className="far fa-plus"></i>
-                            Peace of Mind
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="collapse"
-                          aria-labelledby="collapseThree"
-                          data-parent="#accordion"
-                        >
-                          <p>
-                            Peace of mind that you do not have to worry about
-                            medical bills but can focus on your recovery and
-                            getting back to work and your family.
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <h2 className="para-title">
-                          <span
-                            className="collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            role="button"
-                            aria-controls="collapseThree"
-                          >
-                            <i className="far fa-plus"></i>
-                            No Joining Fees
-                          </span>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="collapse"
-                          aria-labelledby="collapseThree"
-                          data-parent="#accordion"
-                        >
-                          <p>
-                            Immediate access to private medical care and no
-                            joining fees.
+                            24 Hour Emergency Services, Medical Assistance and
+                            Pre-Authorisation provided by Africa Assist.
+                            Immediate cover.Guaranteed private hospital
+                            admission with preference to all Life Healthcare and
+                            Mediclinic hospitals.
                           </p>
                         </div>
                       </li>
@@ -598,7 +550,7 @@ const Accisure = () => {
                       </a>
                     </li>
                     <li>
-                      <a onClick={() => navigate("/healthcare")}>
+                      <a href="#">
                         <i className="fa fa-arrow-right"></i>Healthcare
                       </a>
                     </li>
@@ -707,4 +659,4 @@ const Accisure = () => {
   );
 };
 
-export default Accisure;
+export default Healthcare;

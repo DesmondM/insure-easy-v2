@@ -40,7 +40,7 @@ export const Contact = () => {
           <nav className="main-menu">
             <div className="container">
               <div className="logo-box">
-                <a href="index.html" aria-label="logo image">
+                <a onClick={() => navigate("/")} aria-label="logo image">
                   <img src="assets/images/logo-dark.png" width="155" alt="" />
                 </a>
                 <span className="fa fa-bars mobile-nav__toggler"></span>
@@ -57,13 +57,15 @@ export const Contact = () => {
                   <a onClick={() => navigate("/products")}>Products</a>
                   <ul>
                     <li>
-                      <a href="healthcare.html">Health Care</a>
+                      <a onClick={() => navigate("/healthcare")}>Health Care</a>
                     </li>
                     <li>
-                      <a href="funeral insurance.html">Funeral Cover</a>
+                      <a onClick={() => navigate("/funeralinsurance")}>
+                        Funeral Cover
+                      </a>
                     </li>
                     <li>
-                      <a href="accisure.html">Accisure</a>
+                      <a onClick={() => navigate("/accisure")}>Accisure</a>
                     </li>
                   </ul>
                 </li>
@@ -222,7 +224,7 @@ export const Contact = () => {
             <div className="row justify-content-between">
               <div className="col-lg-3 col-sm-6">
                 <div className="footer-widget footer-widget__about">
-                  <a href="index.html">
+                  <a onClick={() => navigate("/")}>
                     <img
                       src="assets/images/logo-light.png"
                       width="155"
@@ -250,17 +252,17 @@ export const Contact = () => {
                   <h3 className="footer-widget__title">Explore</h3>
                   <ul className="list-unstyled footer-widget__link-list">
                     <li>
-                      <a href="index.html">
+                      <a onClick={() => navigate("/h")}>
                         <i className="fa fa-arrow-right"></i>Home
                       </a>
                     </li>
                     <li>
-                      <a href="about.html">
+                      <a onClick={() => navigate("/about")}>
                         <i className="fa fa-arrow-right"></i>About
                       </a>
                     </li>
                     <li>
-                      <a href="services.html">
+                      <a onClick={() => navigate("/products")}>
                         <i className="fa fa-arrow-right"></i>Products
                       </a>
                     </li>
@@ -277,17 +279,17 @@ export const Contact = () => {
                   <h3 className="footer-widget__title">Downloads</h3>
                   <ul className="list-unstyled footer-widget__link-list">
                     <li>
-                      <a href="funeral insurance.html">
+                      <a onClick={() => navigate("/funeralinsurance")}>
                         <i className="fa fa-arrow-right"></i>Funeral Cover
                       </a>
                     </li>
                     <li>
-                      <a href="healthcare.html">
+                      <a onClick={() => navigate("/healthcare")}>
                         <i className="fa fa-arrow-right"></i>Healthcare
                       </a>
                     </li>
                     <li>
-                      <a href="accisure.html">
+                      <a onClick={() => navigate("/accisure")}>
                         <i className="fa fa-arrow-right"></i>Accisure
                       </a>
                     </li>
@@ -341,7 +343,7 @@ export const Contact = () => {
         <div className="mobile-nav__content">
           <span className="mobile-nav__close mobile-nav__toggler"></span>
           <div className="logo-box">
-            <a href="index.html" aria-label="logo image">
+            <a onClick={() => navigate("/")} aria-label="logo image">
               <img src="assets/images/logo-light.png" width="155" alt="" />
             </a>
           </div>
@@ -372,21 +374,6 @@ export const Contact = () => {
       <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
         <i className="fa fa-angle-up"></i>
       </a>
-
-      <script src="assets/js/jquery-3.5.1.min.js"></script>
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/swiper.min.js"></script>
-      <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-      <script src="assets/js/jquery.magnific-popup.min.js"></script>
-      <script src="assets/js/jquery.validate.min.js"></script>
-      <script src="assets/js/bootstrap-select.min.js"></script>
-      <script src="assets/js/wow.js"></script>
-      <script src="assets/js/odometer.min.js"></script>
-      <script src="assets/js/jquery.appear.min.js"></script>
-      <script src="assets/js/wNumb.min.js"></script>
-      <script src="assets/js/nouislider.min.js"></script>
-
-      <script src="assets/js/theme.js"></script>
     </>
   );
 };
