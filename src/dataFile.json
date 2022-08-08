@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "age": "18-64",
+    "membershipCover": "Member Only",
+    "payout": "R15 000",
+    "premium": "R69"
+  },
+  {
+    "id": 2,
+    "age": "18-64",
+    "membershipCover": "Member Only",
+    "payout": "R20 000",
+    "premium": "R75"
+  },
+  {
+    "id": 3,
+    "age": "18-64",
+    "membershipCover": "Member Only",
+    "payout": "R25 000",
+    "premium": "R79"
+  },
+  {
+    "id": 4,
+    "age": "18-64",
+    "membershipCover": "Member Only",
+    "payout": "R30 000",
+    "premium": "R83"
+  },
+
+  {
+    "id": 5,
+    "age": "65-74",
+    "membershipCover": "Member Only",
+    "payout": "R15 000",
+    "premium": "R130"
+  },
+  {
+    "id": 6,
+    "age": "65-74",
+    "membershipCover": "Member Only",
+    "payout": "R20 000",
+    "premium": "R156"
+  },
+  {
+    "id": 7,
+    "age": "65-74",
+    "membershipCover": "Member Only",
+    "payout": "R25 000",
+    "premium": "R180"
+  },
+  {
+    "id": 8,
+    "age": "65-74",
+    "membershipCover": "Member Only",
+    "payout": "R30 000",
+    "premium": "R205"
+  },
+
+  {
+    "id": 9,
+    "age": "75-84",
+    "membershipCover": "Member Only",
+    "payout": "R15 000",
+    "premium": "R222"
+  },
+  {
+    "id": 10,
+    "age": "75-84",
+    "membershipCover": "Member Only",
+    "payout": "R20 000",
+    "premium": "R276"
+  },
+  {
+    "id": 11,
+    "age": "75-84",
+    "membershipCover": "Member Only",
+    "payout": "R25 000",
+    "premium": "R330"
+  },
+  {
+    "id": 12,
+    "age": "75-84",
+    "membershipCover": "Member Only",
+    "payout": "R30 000",
+    "premium": "R385"
+  },
+
+  {
+    "id": 13,
+    "age": "18-64",
+    "membershipCover": "Member & Children",
+    "payout": "R15 000",
+    "premium": "R82"
+  },
+  {
+    "id": 14,
+    "age": "18-64",
+    "membershipCover": "Member & Children",
+    "payout": "R20 000",
+    "premium": "R89"
+  },
+  {
+    "id": 15,
+    "age": "18-64",
+    "membershipCover": "Member & Children",
+    "payout": "R25 000",
+    "premium": "R97"
+  },
+  {
+    "id": 16,
+    "age": "18-64",
+    "membershipCover": "Member & Children",
+    "payout": "R30 000",
+    "premium": "R105"
+  },
+
+  {
+    "id": 17,
+    "age": "65-74",
+    "membershipCover": "Member & Children",
+    "payout": "R15 000",
+    "premium": "R130"
+  },
+  {
+    "id": 18,
+    "age": "65-74",
+    "membershipCover": "Member & Children",
+    "payout": "R20 000",
+    "premium": "R156"
+  },
+  {
+    "id": 19,
+    "age": "65-74",
+    "membershipCover": "Member & Children",
+    "payout": "R25 000",
+    "premium": "R180"
+  },
+  {
+    "id": 20,
+    "age": "65-74",
+    "membershipCover": "Member & Children",
+    "payout": "R30 000",
+    "premium": "R205"
+  },
+
+  {
+    "id": 21,
+    "age": "75-84",
+    "membershipCover": "Member & Children",
+    "payout": "R15 000",
+    "premium": "R220"
+  },
+  {
+    "id": 22,
+    "age": "75-84",
+    "membershipCover": "Member & Children",
+    "payout": "R20 000",
+    "premium": "R275"
+  },
+  {
+    "id": 23,
+    "age": "75-84",
+    "membershipCover": "Member & Children",
+    "payout": "R25 000",
+    "premium": "R330"
+  },
+  {
+    "id": 24,
+    "age": "75-84",
+    "membershipCover": "Member & Children",
+    "payout": "R30 000",
+    "premium": "R385"
+  },
+
+  {
+    "id": 25,
+    "age": "18-64",
+    "membershipCover": "Family",
+    "payout": "R15 000",
+    "premium": "R90"
+  },
+  {
+    "id": 26,
+    "age": "18-64",
+    "membershipCover": "Family",
+    "payout": "R20 000",
+    "premium": "R100"
+  },
+  {
+    "id": 27,
+    "age": "18-64",
+    "membershipCover": "Family",
+    "payout": "R25 000",
+    "premium": "R110"
+  },
+  {
+    "id": 28,
+    "age": "18-64",
+    "membershipCover": "Family",
+    "payout": "R30 000",
+    "premium": "R120"
+  },
+
+  {
+    "id": 29,
+    "age": "65-74",
+    "membershipCover": "Family",
+    "payout": "R15 000",
+    "premium": "R198"
+  },
+  {
+    "id": 30,
+    "age": "65-74",
+    "membershipCover": "Family",
+    "payout": "R20 000",
+    "premium": "R244"
+  },
+  {
+    "id": 31,
+    "age": "65-74",
+    "membershipCover": "Family",
+    "payout": "R25 000",
+    "premium": "R290"
+  },
+  {
+    "id": 32,
+    "age": "65-74",
+    "membershipCover": "Family",
+    "payout": "R30 000",
+    "premium": "R336"
+  },
+
+  {
+    "id": 33,
+    "age": "75-84",
+    "membershipCover": "Family",
+    "payout": "R15 000",
+    "premium": "R344"
+  },
+  {
+    "id": 34,
+    "age": "75-84",
+    "membershipCover": "Family",
+    "payout": "R20 000",
+    "premium": "R439"
+  },
+  {
+    "id": 35,
+    "age": "75-84",
+    "membershipCover": "Family",
+    "payout": "R25 000",
+    "premium": "R534"
+  },
+  {
+    "id": 36,
+    "age": "75-84",
+    "membershipCover": "Family",
+    "payout": "R30 000",
+    "premium": "R629"
+  }
+]
