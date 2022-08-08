@@ -10,13 +10,6 @@ const Healthcare = () => {
   const navigate = useNavigate();
   return (
     <>
-      {/* <div className="preloader">
-        <img
-          className="preloader__image"
-          src="assets/images/loader.png"
-          alt=""
-        />
-      </div> */}
       <div className="page-wrapper">
         <header className="main-header">
           <div className="topbar">

@@ -25,7 +25,7 @@ const Products = () => {
                   </a>
                   <a href="#">
                     <i className="pylon-icon-clock2"></i>Mon - Sat 8:00 AM -
-                    5:00 PM
+                    5:00PM
                   </a>
                 </div>
               </div>
