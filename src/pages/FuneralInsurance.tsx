@@ -67,7 +67,7 @@ export const FuneralInsurance = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="accisure.html">Accisure</a>
+                      <a onClick={() => navigate("/accisure")}>Accisure</a>
                     </li>
                   </ul>
                 </li>

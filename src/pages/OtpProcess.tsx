@@ -16,6 +16,7 @@ const OtpProcess = () => {
   const [otp, setOTP] = useState();
   const [error, setError] = useState("");
   const [number, setNumber] = useState("");
+  const [correct, setCorrect] = useState(false);
 
   const navigate = useNavigate();
   const generateRecaptcha = () => {
@@ -56,6 +57,7 @@ const OtpProcess = () => {
         .then((result: { user: any }) => {
           const user = result.user;
         })
+        .then(() => setCorrect(true))
         .catch((_error: any) => {});
     }
   };
@@ -119,13 +121,21 @@ const OtpProcess = () => {
               style={{ margin: "auto", padding: "10px" }}
             ></div>
 
-            <Button
+            {correct ? (
+              navigate("/application")
+            ) : (
+              <div>
+                <h1>Incorrect OTP</h1>
+                <h2>Check the sms you received and retype it in</h2>
+              </div>
+            )}
+            {/* <Button
               type="submit"
               variant="primary"
               onClick={() => navigate("/application")}
             >
               Send OTP
-            </Button>
+            </Button> */}
           </form>
         </div>
       </div>
