@@ -57,6 +57,7 @@ const OtpProcessVpp = () => {
         })
         .then(() => setSomeEntry(true))
         .then(() => setCorrect(true))
+        .then(() => navigate("/vppapplication"))
         .catch((_error: any) => {
           alert("Incorrect OTP Check the sms you received and retype it in");
         });
@@ -116,16 +117,9 @@ const OtpProcessVpp = () => {
                 ) : null}
               </div>
 
-              <div className="Otp-responseMsg" id="recaptcha-container"></div>
-
-              {correct ? navigate("/vppapplication") : null}
-              {/* <Button
-                type="submit"
-                variant="primary"
-                onClick={() => navigate("/application")}
-              >
-                Send OTP
-              </Button> */}
+              <div className="Otp-responseMsg" id="recaptcha-container">
+                {/* { navigate("/vppapplication")} */}
+              </div>
             </form>
           </div>
         </div>

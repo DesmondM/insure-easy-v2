@@ -368,16 +368,27 @@ const Applicationform = () => {
                   ) : null}
                   {count === 3 ? (
                     <button
-                      className="btn btn-primary"
+                      // className="btn btn-primary"
                       type="submit"
-                      style={{ width: "50%", display: "block", margin: "auto" }}
+                      style={{
+                        width: "50%",
+                        display: "block",
+                        margin: "auto",
+                        padding: "10px",
+                        background: "var(--thm-base)",
+                      }}
                     >
-                      Submit
+                      SUBMIT
                     </button>
                   ) : null}
                 </form>
                 <button
-                  className="btn btn-dark"
+                  // className="btn btn-dark"
+                  style={{
+                    width: "20%",
+                    margin: "10px",
+                    padding: "10px",
+                  }}
                   type="submit"
                   onClick={() => setCount(count - 1)}
                   disabled={count < 2}
@@ -385,7 +396,12 @@ const Applicationform = () => {
                   ⏪ Back
                 </button>
                 <button
-                  className="btn btn-light"
+                  // className="btn btn-light"
+                  style={{
+                    width: "20%",
+                    margin: "auto",
+                    padding: "10px",
+                  }}
                   type="submit"
                   onClick={() => setCount(count + 1)}
                   disabled={count > 2}

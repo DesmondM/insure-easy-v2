@@ -60,6 +60,7 @@ const OtpProcess = () => {
         })
         .then(() => setSomeEntry(true))
         .then(() => setCorrect(true))
+        .then(() => navigate("/application"))
         .catch((_error: any) => {
           alert("Incorrect OTP Check the sms you received and retype it in");
         });
@@ -119,16 +120,9 @@ const OtpProcess = () => {
                 ) : null}
               </div>
 
-              <div className="Otp-responseMsg" id="recaptcha-container"></div>
-
-              {correct ? navigate("/application") : null}
-              {/* <Button
-              type="submit"
-              variant="primary"
-              onClick={() => navigate("/application")}
-            >
-              Send OTP
-            </Button> */}
+              <div className="Otp-responseMsg" id="recaptcha-container">
+                {/* {correct ? navigate("/application") : null} */}
+              </div>
             </form>
           </div>
         </div>
