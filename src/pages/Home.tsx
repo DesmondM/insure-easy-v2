@@ -24,6 +24,11 @@ import brand5 from "/brand-1-7.jpg";
 const Home = () => {
   const [modalOneIsOpen, setOneIsOpen] = useState(false);
   const [openQueryFields, setOpenQueryFields] = useState(false);
+  const [openAccisureFields, setOpenAccisureFields] = useState(false);
+  const [openCoverValuePlusFields, setOpenCoverValuePlusFields] =
+    useState(false);
+  const [openCoverValuePlusSeniorFields, setOpenCoverValuePlusSeniorFields] =
+    useState(false);
   const [userValues, setUserValues] = useState({
     age: "",
     membership: "",
@@ -46,14 +51,21 @@ const Home = () => {
     setOneIsOpen(true);
   };
   const openFields = () => {
+    window.location.reload();
     setOpenQueryFields(true);
+  };
+
+  const processCoverValuePlus = () => {
+    setOpenCoverValuePlusFields(true);
+  };
+  const processCoverValuePlusSenior = () => {
+    setOpenCoverValuePlusSeniorFields(true);
   };
 
   return (
     <>
       <Modal isOpen={modalOneIsOpen}>
         {" "}
-        The modal holla
         <form>
           Select age
           <select
@@ -388,7 +400,10 @@ const Home = () => {
                 >
                   <h3>GET YOUR QUOTE TODAY!</h3>
                   <div className="about-one__form-content">
-                    <button className="thm-btn" onClick={openFields}>
+                    <button
+                      className="thm-btn"
+                      onClick={() => setOpenQueryFields(!openQueryFields)}
+                    >
                       FUNERAL COVER
                     </button>
                     {openQueryFields ? (
@@ -492,15 +507,133 @@ const Home = () => {
                       </div>
                     ) : null}
 
-                    <a href="#" className="thm-btn">
+                    <button
+                      className="thm-btn"
+                      onClick={() =>
+                        setOpenCoverValuePlusFields(!openCoverValuePlusFields)
+                      }
+                    >
                       HEALTH COVER VALUE PLUS PLAN
-                    </a>
-                    <a href="#" className="thm-btn">
+                    </button>
+                    {openCoverValuePlusFields ? (
+                      <div>
+                        <h4 style={{ textAlign: "center", marginTop: "10px" }}>
+                          Value Plus Hospital Plan{" "}
+                        </h4>
+                        <h5 style={{ textAlign: "center" }}>
+                          Single member: (under 65yrs){" "}
+                          <span style={{ color: "blue" }}> R285PM</span>
+                        </h5>
+                        <h5 style={{ textAlign: "center" }}>
+                          Member+1 Child:{" "}
+                          <span style={{ color: "blue" }}>R470PM</span>
+                        </h5>
+                        <h5 style={{ textAlign: "center" }}>
+                          Member + 2-4 Children:{" "}
+                          <span style={{ color: "blue" }}>R655PM</span>
+                        </h5>
+                        <h5 style={{ textAlign: "center" }}>
+                          Couple: <span style={{ color: "blue" }}>R470PM</span>
+                        </h5>
+                        <h5 style={{ textAlign: "center" }}>
+                          Couple + 1:{" "}
+                          <span style={{ color: "blue" }}>R655PM</span>
+                        </h5>
+                        <h5 style={{ textAlign: "center" }}>
+                          Couple + 2-4 Children:{" "}
+                          <span style={{ color: "blue" }}>R840PM</span>
+                        </h5>
+                        <div className="col-md-12">
+                          <button
+                            className="thm-btn"
+                            type="submit"
+                            onClick={() => {
+                              // navigate("/application");
+                              navigate("/otpvppprocess");
+                            }}
+                          >
+                            Complete Application
+                          </button>
+                        </div>
+                      </div>
+                    ) : null}
+
+                    <button
+                      className="thm-btn"
+                      onClick={() =>
+                        setOpenCoverValuePlusSeniorFields(
+                          !openCoverValuePlusSeniorFields
+                        )
+                      }
+                    >
                       HEALTH COVER VALUE PLUS SENIOR
-                    </a>
-                    <a href="#" className="thm-btn">
+                    </button>
+                    {openCoverValuePlusSeniorFields ? (
+                      <div>
+                        <h4 style={{ textAlign: "center", marginTop: "10px" }}>
+                          Value Plus Hospital Plan Seniors{" (65yrs) "}
+                        </h4>
+                        <h5 style={{ textAlign: "center" }}>
+                          Senior Member{" "}
+                          <span style={{ color: "blue" }}> R450PM</span>
+                        </h5>
+                        <h5 style={{ textAlign: "center" }}>
+                          Senior Couple{" "}
+                          <span style={{ color: "blue" }}>R900PM</span>
+                        </h5>
+
+                        <div className="col-md-12">
+                          <button
+                            className="thm-btn"
+                            type="submit"
+                            onClick={() => {
+                              // navigate("/application");
+                              navigate("/otpprocess");
+                            }}
+                          >
+                            Complete Application
+                          </button>
+                        </div>
+                      </div>
+                    ) : null}
+
+                    <button
+                      className="thm-btn"
+                      onClick={() => setOpenAccisureFields(!openAccisureFields)}
+                    >
                       ACCISURE
-                    </a>
+                    </button>
+                    {openAccisureFields ? (
+                      <div>
+                        <h4 style={{ textAlign: "center", marginTop: "10px" }}>
+                          Accisure details{" "}
+                        </h4>
+                        <h5 style={{ textAlign: "center" }}>
+                          Single member:{" "}
+                          <span style={{ color: "blue" }}> R29PM</span>
+                        </h5>
+                        <h5 style={{ textAlign: "center" }}>
+                          Member+1 addition:{" "}
+                          <span style={{ color: "blue" }}>R49PM</span>
+                        </h5>
+                        <h5 style={{ textAlign: "center" }}>
+                          Member+5 addition:{" "}
+                          <span style={{ color: "blue" }}>R99PM</span>
+                        </h5>
+                        <div className="col-md-12">
+                          <button
+                            className="thm-btn"
+                            type="submit"
+                            onClick={() => {
+                              // navigate("/application");
+                              navigate("/otpprocess");
+                            }}
+                          >
+                            Complete Application
+                          </button>
+                        </div>
+                      </div>
+                    ) : null}
                   </div>
                 </form>
               </div>
@@ -1102,7 +1235,7 @@ const Home = () => {
                       </a>
                     </li>
                     <li>
-                      <a onClick={() => navigate("/faccisure")}>
+                      <a onClick={() => navigate("/accisure")}>
                         <i className="fa fa-arrow-right"></i>Accisure
                       </a>
                     </li>

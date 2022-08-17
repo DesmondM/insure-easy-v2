@@ -12,6 +12,9 @@ import { Contact } from "./pages/Contact";
 import Healthcare from "./pages/Healthcare";
 import { FuneralInsurance } from "./pages/FuneralInsurance";
 import Accisure from "./pages/Accisure";
+import ValuePlusPlan from "./pages/ValuePlusPlan";
+import ValuePlusSeniors from "./pages/ValuePlusSeniors";
+import OtpProcessVpp from "./pages/OtpProcessVpp";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,7 +26,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/otpprocess" element={<OtpProcess />} />
+          <Route path="/otpvppprocess" element={<OtpProcessVpp />} />
           <Route path="/application" element={<Applicationform />} />
+          <Route path="/vppapplication" element={<ValuePlusPlan />} />
+          <Route path="/vpsapplication" element={<ValuePlusSeniors />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

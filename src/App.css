@@ -7874,3 +7874,60 @@ h6 {
 button {
   font-size: calc(10px + 2vmin);
 }
+
+.Otp-box {
+  display: grid;
+  margin: auto;
+  margin-top: 120px;
+  width: 60vw;
+  height: 380px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header cellNum button responseMsg";
+  text-align: center;
+  box-shadow: 1px 2px 3px grey;
+  justify-content: center;
+  /* justify-self: center;
+  align-self: center;
+  place-self: center; */
+  /* align-items: center; */
+}
+
+.Otp-header {
+  grid-area: header;
+  width: 60vw;
+}
+.Otp-cellNum {
+  grid-area: cellNum;
+  width: 60vw;
+}
+.Otp-cellBtn {
+  grid-area: button;
+  padding: 30px 30px;
+  width: 60vw;
+}
+.Otp-responseMsg {
+  grid-area: responseMsg;
+  padding: 30px;
+  width: 60vw;
+  justify-content: center;
+  margin: auto;
+}
+
+button,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 80%;
+}
+
+input {
+  margin: 5px;
+  width: 75%;
+  padding: 5px;
+}

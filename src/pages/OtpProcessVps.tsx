@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import { authentication } from "../firebaseConfig";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-
 import { Link, useNavigate } from "react-router-dom";
-
 import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
 
-const OtpProcess = () => {
+const OtpProcessVps = () => {
   const countryCode = "+27";
   const [phoneNumber, setPhoneNumber] = useState(countryCode);
   const [expandForm, setExpandForm] = useState(false);
@@ -121,14 +118,14 @@ const OtpProcess = () => {
 
               <div className="Otp-responseMsg" id="recaptcha-container"></div>
 
-              {correct ? navigate("/application") : null}
+              {correct ? navigate("/vpsapplication") : null}
               {/* <Button
-              type="submit"
-              variant="primary"
-              onClick={() => navigate("/application")}
-            >
-              Send OTP
-            </Button> */}
+                type="submit"
+                variant="primary"
+                onClick={() => navigate("/application")}
+              >
+                Send OTP
+              </Button> */}
             </form>
           </div>
         </div>
@@ -137,4 +134,4 @@ const OtpProcess = () => {
   );
 };
 
-export default OtpProcess;
+export default OtpProcessVps;
